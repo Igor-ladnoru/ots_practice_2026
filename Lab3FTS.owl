@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vp100/ontologies/2026/9/Lab3FTS"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/vp100/ontologies/2026/9/Lab3FTS">
+    <Prefix name="" IRI="http://www.semanticweb.org/vp100/ontologies/2026/9/Lab3FTS"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#hasShader"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shaderName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvalidObject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#textureQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesTexture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#objectName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sceneName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FirstWeapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shader"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shadersNodesQuantity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cubes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MetalShader"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToonShader"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FirstCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeaponsTexture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Character&apos;sTexture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DefaultScene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Texture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#textureName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Scene"/>
+        <NamedIndividual IRI="#Character"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#Cubes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scene"/>
+        <NamedIndividual IRI="#DefaultScene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#FirstCharacter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#FirstWeapon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shader"/>
+        <NamedIndividual IRI="#MetalShader"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shader"/>
+        <NamedIndividual IRI="#ToonShader"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Texture"/>
+        <NamedIndividual IRI="#WeaponsTexture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Texture"/>
+        <NamedIndividual IRI="#Character&apos;sTexture"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsObject"/>
+        <NamedIndividual IRI="#Character"/>
+        <NamedIndividual IRI="#FirstCharacter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasShader"/>
+        <NamedIndividual IRI="#Cubes"/>
+        <NamedIndividual IRI="#ToonShader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsObject"/>
+        <NamedIndividual IRI="#DefaultScene"/>
+        <NamedIndividual IRI="#Cubes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesTexture"/>
+        <NamedIndividual IRI="#FirstCharacter"/>
+        <NamedIndividual IRI="#Character&apos;sTexture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasShader"/>
+        <NamedIndividual IRI="#FirstWeapon"/>
+        <NamedIndividual IRI="#MetalShader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesTexture"/>
+        <NamedIndividual IRI="#FirstWeapon"/>
+        <NamedIndividual IRI="#Character&apos;sTexture"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sceneName"/>
+        <NamedIndividual IRI="#Character"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Персонаж</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#objectName"/>
+        <NamedIndividual IRI="#Cubes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Объединенные кубы</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sceneName"/>
+        <NamedIndividual IRI="#DefaultScene"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Первая сцена</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#objectName"/>
+        <NamedIndividual IRI="#FirstCharacter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Рен</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#objectName"/>
+        <NamedIndividual IRI="#FirstWeapon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Оружие Рена</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#shaderName"/>
+        <NamedIndividual IRI="#MetalShader"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Шейдер металла</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#shadersNodesQuantity"/>
+        <NamedIndividual IRI="#MetalShader"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#shaderName"/>
+        <NamedIndividual IRI="#ToonShader"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2д материал</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#shadersNodesQuantity"/>
+        <NamedIndividual IRI="#ToonShader"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#shaderName"/>
+        <NamedIndividual IRI="#WeaponsTexture"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Текстура оружия</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#textureQuality"/>
+        <NamedIndividual IRI="#WeaponsTexture"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4194304</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#shaderName"/>
+        <NamedIndividual IRI="#Character&apos;sTexture"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Тектсура персонажа</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#textureQuality"/>
+        <NamedIndividual IRI="#Character&apos;sTexture"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4194304</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsObject"/>
+        <Class IRI="#Scene"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasShader"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesTexture"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsObject"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShader"/>
+        <Class IRI="#Shader"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesTexture"/>
+        <Class IRI="#Texture"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#objectName"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sceneName"/>
+        <Class IRI="#Scene"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shaderName"/>
+        <Class IRI="#Shader"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shadersNodesQuantity"/>
+        <Class IRI="#Shader"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#textureName"/>
+        <Class IRI="#Texture"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#textureQuality"/>
+        <Class IRI="#Texture"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#objectName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sceneName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shaderName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shadersNodesQuantity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#textureName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#textureQuality"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ShadAndTxr</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Object"/>
+                <Variable IRI="x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasShader"/>
+                <Variable IRI="x"/>
+                <Variable IRI="shader"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Shader"/>
+                <Variable IRI="shader"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usesTexture"/>
+                <Variable IRI="x"/>
+                <Variable IRI="texture"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Texture"/>
+                <Variable IRI="texture"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#InvalidObject"/>
+                <Variable IRI="x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ShadCont</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsObject"/>
+                <Variable IRI="scene"/>
+                <Variable IRI="object"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasShader"/>
+                <Variable IRI="object"/>
+                <Variable IRI="shader"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsObject"/>
+                <Variable IRI="scene"/>
+                <Variable IRI="shader"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TxrCont</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsObject"/>
+                <Variable IRI="scene"/>
+                <Variable IRI="object"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usesTexture"/>
+                <Variable IRI="object"/>
+                <Variable IRI="texture"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#containsObject"/>
+                <Variable IRI="scene"/>
+                <Variable IRI="texture"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
